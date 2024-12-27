@@ -9,13 +9,18 @@ authors:
     orcid: 0000-0003-4719-7472
     affiliation: 1
   - name: Michael R. Milton
-    orcid: https://orcid.org/0000-0002-8965-2595
+    orcid: 0000-0002-8965-2595
     affiliation: 2
+  - name: Athanasia M. Mowinckel
+    orcid: 0000-0002-5756-0223
+    affiliation: 3
 affiliations:
  - name: Graduate School of Global and Transdisciplinary Studies, College of Liberal Arts and Sciences, Chiba University, Chiba, Japan
    index: 1
  - name: Walter and Eliza Hall Institute of Medical Research, Parkville, Victoria, Australia
    index: 2
+ - name: Center for Lifespan Changes in Brain and Cognition, Dept. of Psychology, University of Oslo, Norway
+   index: 3
 date: 13 December 2024
 bibliography: paper.bib
 
@@ -27,7 +32,7 @@ Reproducibility is critical for sustainable science [@Diaba-Nuhoho2021a].
 While reproducibility of data analysis can be greatly improved by using code, the results of loosely or poorly organized code may be difficult or impossible to reproduce [@Trisovic2022].
 Furthermore, as a project grows in complexity, it becomes difficult to manually track which steps of an analysis need to be re-run due to changes in the code base.
 The `targets` R package [@Landau2021] automates data analysis workflows in R, thus greatly improving both reproducibility and efficiency, and is rapidly becoming the de-facto workflow manager package in R.
-However, `targets` adopts a functions-focused approach that is different from the way most beginners write R code, and little training material exists to help onboard researchers seeking to use `targets`.
+However, `targets` adopts a functions-focused approach that is different from the way most beginners write R code, and little training material exists to help onboard researchers seeking to use this approach.
 
 Here, we present a one-day workshop based on the highly successful [Carpentries](https://www.carpentries.org) format to teach `targets` to beginners [@Wilson2016].
 Although no specialized knowledge of any field is required, the workshop is designed for researchers at the advanced undergraduate level and above, and presumes a basic working knowledge of R.
@@ -35,9 +40,9 @@ The workshop curriculum is openly available under a [CC-BY 4.0](https://creative
 
 # Statement of Need
 
-`targets` is difficult for beginners to learn because it executes R code in an non-interactive session and heavily relies on user-defined functions.
+As `targets` executes R code in an non-interactive session and heavily relies on user-defined functions, it is difficult for beginners to learn.
 While the documentation provided by the package is extensive, it is not necessarily easy for beginners to access.
-This workshop fills the need for `targets` curriculum focused on researchers with basic R skills but who have never used `targets` before and may be unfamiliar with writing functions or executing code in non-interactive sessions.
+This workshop fills the need for `targets` curriculum focused on researchers with basic R skills, but who have never used `targets` before and may be unfamiliar with writing functions or executing code in non-interactive sessions.
 
 # Curriculum design
 
@@ -67,10 +72,10 @@ Table 1: Summary of the `targets` workshop curriculum contents.
 
 The workshop developed out of the repeated need to teach `targets` to researchers.
 JHN started teaching `targets` without the use of a curriculum in 2022 for the [AsiaR meetup](https://www.youtube.com/watch?v=XMvinGSG72k&t=1346s),  [Bio"Pack"athon meetup](https://www.youtube.com/watch?v=qwZsMKUMu6U), and [ISCB Academy](https://github.com/ISCB-Academy/bioinfo-targets).
-When it became clear that the demand for `targets` instruction was only increasing, he realized it benefit not only himself but others to have a standardized curriculum.
+When it became clear that the demand for `targets` instruction was only increasing, he realized it benefit not only himself, but also others, to have a standardized curriculum.
 
 The next major impetus for curriculum creation occurred when JHN visited Norway in Summer of 2023 to teach an unrelated [workshop on spatial phylogenetics](https://www.forbio.uio.no/events/courses/2023/Workshop%20in%20Spatial%20Phylogenetics).
-He reached out to his colleague and fellow R practitioner Dr. Athanasia Mowinckel about the possibility of getting together for coffee, who suggested the idea of running a `targets` workshop at the University of Oslo, as described in this [blog post](https://ropensci.org/blog/2023/07/20/teaching-targets-with-penguins/).
+He reached out to his colleague and fellow R practitioner Dr. Athanasia Mowinckel about the possibility of getting together for coffee, who suggested the idea of running a `targets` workshop at the University of Oslo, as described in an [rOpenSci blog post](https://ropensci.org/blog/2023/07/20/teaching-targets-with-penguins/).
 JHN realized this was the motivation he needed to draft a Carpentries-style curriculum to teach `targets`.
 Prior to the workshop, JHN and AM collaborated through GitHub to craft the curriculum that was used at the workshop and is the basis for the current curriculum.
 
